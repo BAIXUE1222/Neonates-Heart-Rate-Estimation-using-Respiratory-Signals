@@ -1,6 +1,3 @@
-
-#extract features
-
 import matplotlib.pylab as plt
 import wfdb
 import matplotlib.pyplot as plt
@@ -24,6 +21,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
+#extract features
 def extract_udf(_df):
   extraction_settings = ComprehensiveFCParameters()
   X = extract_features(_df, column_id='id', column_sort='time', default_fc_parameters=extraction_settings, impute_function=impute)
